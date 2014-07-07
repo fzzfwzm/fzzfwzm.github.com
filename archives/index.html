@@ -35,6 +35,10 @@
         <a href="/" id="logo">风中追风</a>
       </h1>
       
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">个人思绪记录</a>
+        </h2>
+      
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">
@@ -60,10 +64,53 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-first-week-note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/07/07/first-week-note/" class="article-date">
+  <time datetime="2014-07-07T11:40:12.000Z" itemprop="datePublished">7月 7 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>title: 第一周记录 #<br>date: 2014-07-07 07:56:29 #发表日期，一般不改动<br>categories: 实习记录 #文章文类<br>tags:  #文章标签，多于一项时用这种格式</p>
+<p>========</p>
+<h3 id="关于String类">关于String类</h3>
+<pre><code>任务: 用模板实现一个<span class="built_in">String</span>类，新的<span class="built_in">String</span>类能兼容std::<span class="built_in">string</span> 或者其他<span class="built_in">string</span>类
+</code></pre><h4 id="思考后的问题">思考后的问题</h4>
+<h5 id="空间分配策略">空间分配策略</h5>
+<pre><code> 对于<span class="keyword">string</span>储存空间大小是动态，可以按需分配，可以像<span class="keyword">vector</span>一样，每次空间翻倍，
+可以每次翻<span class="number">3</span>倍或更大的倍数，更可以将这些结合起来，每种方法都有适用的范围，但是作为
+一个通用的解决方案，最后我还是选择了<span class="keyword">vector</span>这种每次乘<span class="number">2</span>策略。
+我觉得优点如下：
+</code></pre><ul>
+<li>与按需分配相比，要的越多，给的越多，减少重分配的次数，但是不免浪费了空间</li>
+<li>一般情况下，用一个无符号的变量来代表申请分配空间的大小，根据字长(一般4个字节)，<br>  2^32,必须要初始化2的幂次数，然后每次以2的幂次数倍才能达到这个最大值<h5 id="赋值操作_a_=_a">赋值操作 a = a</h5>
+</li>
+</ul>
+<h4 id="欲解决的问题">欲解决的问题</h4>
+<h5 id="关于宽字符和编码格式的问题">关于宽字符和编码格式的问题</h5>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/fzzfwzm/fzzfwzm.github.com/2014/07/07/first-week-note/" data-id="yo67qmo0yokuv6l2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2014/07/06/hello-world/" class="article-date">
-  <time datetime="2014-07-06T11:29:04.000Z" itemprop="datePublished">Jul 6 2014</time>
+  <time datetime="2014-07-06T11:29:04.000Z" itemprop="datePublished">7月 6 2014</time>
 </a>
     
   </div>
@@ -112,7 +159,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/fzzfwzm/fzzfwzm.github.com/2014/07/06/hello-world/" data-id="qhz7hles3soubq4i" class="article-share-link">Share</a>
+      <a data-url="https://github.com/fzzfwzm/fzzfwzm.github.com/2014/07/06/hello-world/" data-id="gfr73ozpit3sx87v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -137,7 +184,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07">July 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07">七月 2014</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -147,6 +194,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2014/07/07/first-week-note/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2014/07/06/hello-world/">Hello World</a>
