@@ -1,9 +1,8 @@
-title: 第一周记录 #
-date: 2014-07-07 07:56:29 #发表日期，一般不改动
-categories: 实习记录 #文章文类
-tags:  #文章标签，多于一项时用这种格式
+title: 第一周记录 
+date: 2014-07-07 07:56:29 
+categories: 实习记录 
+---
 
-========
 ### 关于String类
 	任务: 用模板实现一个String类，新的String类能兼容std::string 或者其他string类
 #### 思考后的问题
