@@ -9,9 +9,12 @@
 任务: 用模板实现一个String类，新的String类能兼容std::string 或者其他string类
 思考后的问题
 空间分配策略
- 对于string储存空间大小是动态，可以按需分配，可以像vector一样，每次空间翻倍，
-可以每次翻3倍或更大的倍数，更可以将这些结合起来，每种方法都有适用的范围，但是作为
-一个通用的解决方案，最后我还是选择了vector这种每次乘2策略。">
+ 对于string储存空间大小是动态：
+ 1.可以按需分配
+ 2.可以像vector一样，每次空间翻倍，可以按需分配，可以像vector一样，每次空间翻倍，
+ 3.可以每次翻3倍或更大的倍数
+ 4.更可以将这些结合起来
+ 每种方法都有适用的范">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一周记录">
 <meta property="og:url" content="https://github.com/fzzfwzm/fzzfwzm.github.com/2014/07/07/first-week-note/">
@@ -20,18 +23,24 @@
 任务: 用模板实现一个String类，新的String类能兼容std::string 或者其他string类
 思考后的问题
 空间分配策略
- 对于string储存空间大小是动态，可以按需分配，可以像vector一样，每次空间翻倍，
-可以每次翻3倍或更大的倍数，更可以将这些结合起来，每种方法都有适用的范围，但是作为
-一个通用的解决方案，最后我还是选择了vector这种每次乘2策略。">
+ 对于string储存空间大小是动态：
+ 1.可以按需分配
+ 2.可以像vector一样，每次空间翻倍，可以按需分配，可以像vector一样，每次空间翻倍，
+ 3.可以每次翻3倍或更大的倍数
+ 4.更可以将这些结合起来
+ 每种方法都有适用的范">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一周记录">
 <meta name="twitter:description" content="关于String类
 任务: 用模板实现一个String类，新的String类能兼容std::string 或者其他string类
 思考后的问题
 空间分配策略
- 对于string储存空间大小是动态，可以按需分配，可以像vector一样，每次空间翻倍，
-可以每次翻3倍或更大的倍数，更可以将这些结合起来，每种方法都有适用的范围，但是作为
-一个通用的解决方案，最后我还是选择了vector这种每次乘2策略。">
+ 对于string储存空间大小是动态：
+ 1.可以按需分配
+ 2.可以像vector一样，每次空间翻倍，可以按需分配，可以像vector一样，每次空间翻倍，
+ 3.可以每次翻3倍或更大的倍数
+ 4.更可以将这些结合起来
+ 每种方法都有适用的范">
   
     <link rel="alternative" href="/atom.xml" title="风中追风" type="application/atom+xml">
   
@@ -110,9 +119,12 @@
 <pre><code>任务: 用模板实现一个<span class="built_in">String</span>类，新的<span class="built_in">String</span>类能兼容std::<span class="built_in">string</span> 或者其他<span class="built_in">string</span>类
 </code></pre><h4 id="思考后的问题">思考后的问题</h4>
 <h5 id="空间分配策略">空间分配策略</h5>
-<pre><code> 对于<span class="keyword">string</span>储存空间大小是动态，可以按需分配，可以像<span class="keyword">vector</span>一样，每次空间翻倍，
-可以每次翻<span class="number">3</span>倍或更大的倍数，更可以将这些结合起来，每种方法都有适用的范围，但是作为
-一个通用的解决方案，最后我还是选择了<span class="keyword">vector</span>这种每次乘<span class="number">2</span>策略。
+<pre><code> 对于<span class="keyword">string</span>储存空间大小是动态：
+ <span class="number">1.</span>可以按需分配
+ <span class="number">2.</span>可以像<span class="keyword">vector</span>一样，每次空间翻倍，可以按需分配，可以像<span class="keyword">vector</span>一样，每次空间翻倍，
+ <span class="number">3.</span>可以每次翻<span class="number">3</span>倍或更大的倍数
+ <span class="number">4.</span>更可以将这些结合起来
+ 每种方法都有适用的范围，但是不知道面对一般情况，最后我还是选择了<span class="keyword">vector</span>这种每次乘<span class="number">2</span>策略。
 我觉得优点如下：
 </code></pre><ul>
 <li>与按需分配相比，要的越多，给的越多，减少重分配的次数，但是不免浪费了空间</li>
@@ -125,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/fzzfwzm/fzzfwzm.github.com/2014/07/07/first-week-note/" data-id="i0m3v0p2efclvuaz" class="article-share-link">Share</a>
+      <a data-url="https://github.com/fzzfwzm/fzzfwzm.github.com/2014/07/07/first-week-note/" data-id="o95p8t8odfiw5scn" class="article-share-link">Share</a>
       
       
     </footer>
